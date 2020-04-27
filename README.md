@@ -1,27 +1,20 @@
-# QuantFinance-Trading
-This project deals with  __Quantative Trading, building a trading strategy by generating alpha, optimizing a portfolio__ .
+# Using AI to generate and Combine Alpha
+This project deals with  __Quantative Trading, Generating & Combining alpha for better trading strategies__ .
 
-This project is divided into 5 sections :
-1. __Trading with Momentum Strategy :__
-   - Generated a trading signal based on Momentum Indicator.
-   - Tested the strategy to see if it has potential to be profitable.
-2. __Break-Out Strategy :__
-    - Implemented Break-Out Strategy i.e when stocks break out of range, due to, e.g., a significant news release or from market pressure from a large investor.
-3. __Smart-Beta Portfolio Optimization:__
-    - Built a portfolio using Quadratic programming to optimize the weights.
-    - The portfolio formed was compared to a benchmark index by calculatiing a tracking error against the index.
-4. __Multi-Factor Model using PCA:__
-    - Created a statistical risk model using Principal Component Analysis.
-    - Created factors, then evaluated them using factor-weighted returns, quantile analysis, sharpe ratio, and turnover analysis.
-    - Optimized the portfolio using the risk model and factors using multiple optimization formulations.
-5. __Backtesting:__
-    - Built a fairly realistic backtester that uses the Barra data. The backtester will perform portfolio optimization that includes transaction costs.
-    - Implemented it with computational efficiency in mind, to allow for a reasonably fast backtest.
-    - Performanced attribution to identify the major drivers of your portfolio's profit-and-loss (PnL).
+This project is divided into 3 sections :
+1. __NLP on 10k-Financial Statements:__
+   - Scraped and Pre-processed 10K-Financial Statements that are the annual reports that publicly traded companies are required to file with the SEC within 60 days of the fiscal year end.
+   - Natural Language Processing Analysis on 10-k financial statements to generate an alpha factor.
+2. __Analyze Stock Sentiments from StockTwits using Deep Learning:__
+    - Built a deep learning model to classify the sentiment of messages from StockTwits (a social network for investors and traders). 
+    - Model predicts if any particular message is positive or negative. From this, a signal of the public sentiment for various ticker symbols is generated.
+3. __Combining Alpha using Random Forest:__
+    - Combined signals on a random forest for enhanced alpha. 
+    - While implementing this, solved the problem of overlapping samples.
 
 Dataset
 -
-Since the project was under Udacity's AI for Trading Nanodegree the dataset was provided by thier partners Quotemedia, Barra and Sharadar.
+Since the project was under Udacity's AI for Trading Nanodegree the dataset was provided by thier partners Quotemedia and Loughran-McDonald sentiment word lists. Moreover, StockTwits and SEC sites were used to fetch data for Stock Sentiment and NLP repectively.
 
 ## Installation
 
